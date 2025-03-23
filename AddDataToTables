@@ -1,0 +1,28 @@
+USE AkdComp;
+INSERT INTO birimler (birim_id, birim_ad) VALUES
+(1, 'Yazılım'),
+(2, 'Donanım'),
+(3, 'Güvenlik');
+INSERT INTO calisanlar (calisan_id, ad, soyad, maas, katilmaTarihi, calisan_birim_id) VALUES
+(1, 'Salih', 'Yaralı', 128000, '2014-02-20 00:00:00', 1),
+(2, 'Cemal', 'Demir', 61000, '2014-06-01 00:00:00', 2),
+(3, 'Rıza', 'Sarı', 90000, '2014-02-20 00:00:00', 3),
+(4, 'Zehra', 'Gece', 86000, '2014-06-01 00:00:00', 1),
+(5, 'Zeynep', 'Mer', 28000, '2014-06-01 00:00:00', 2),
+(6, 'İdil', 'Aslan', 112000, '2014-06-01 00:00:00', 3),
+(7, 'Deniz', 'Gezer', 60000, '2014-01-11 00:00:00', 1);
+
+INSERT INTO ikramiye (ikramiye_calisan_id, ikramiye_ucret, ikramiye_tarih) VALUES
+(1, 9000, '2016-02-20 00:00:00'),
+(2, 2500, '2016-02-20 00:00:00'),
+(3, 6000, '2016-06-11 00:00:00'),
+(4, 3000, '2016-02-20 00:00:00'),
+(5, 3500, '2016-06-11 00:00:00');
+
+INSERT INTO unvan (unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES
+(1, 'Yönetici', '2016-02-20 00:00:00'),
+(2, 'Personel', '2016-06-11 00:00:00'),
+(3, 'Müdür', '2016-06-11 00:00:00'),
+(4, 'Yönetici Yardımcısı', '2016-06-11 00:00:00'),
+(5, 'Personel', '2016-06-11 00:00:00'),
+(6, 'Takım Lideri', '2016-06-11 00:00:00');
